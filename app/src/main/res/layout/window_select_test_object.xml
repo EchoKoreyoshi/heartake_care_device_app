@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:text="@string/tv_select_test_object"
+        android:textColor="@android:color/black"
+        android:textSize="?attr/fontSize_2"/>
+
+    <EditText
+        android:id="@+id/et_select_test_object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:hint="@string/et_select_test_object"
+        android:textSize="?attr/fontSize_2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:text="@string/tv_select_test_object1"
+        android:textColor="@android:color/black"
+        android:textSize="?attr/fontSize_2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="自己"
+        android:textColor="@android:color/black"
+        android:textSize="?attr/fontSize_2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="张三"
+        android:textColor="@android:color/black"
+        android:textSize="?attr/fontSize_2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="李四"
+        android:textColor="@android:color/black"
+        android:textSize="?attr/fontSize_2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="王五"
+        android:textColor="@android:color/black"
+        android:textSize="?attr/fontSize_2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="赵六"
+        android:textColor="@android:color/black"
+        android:textSize="?attr/fontSize_2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/rv_select_test_object"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="5sp"-->
+    <!--android:fadeScrollbars="false"-->
+    <!--android:scrollbarSize="5dp"-->
+    <!--android:scrollbarStyle="outsideInset"-->
+    <!--android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"-->
+    <!--android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"-->
+    <!--android:scrollbars="vertical"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_select_test_object_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/tv_select_test_object_add"
+                android:textColor="@color/colorPrimary"
+                android:textSize="?attr/fontSize_2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_select_test_object_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/tv_select_test_object_ok"
+                android:textColor="@color/colorPrimary"
+                android:textSize="?attr/fontSize_2"/>
+
+            <TextView
+                android:id="@+id/tv_select_test_object_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/tv_select_test_object_no"
+                android:textColor="@color/colorPrimary"
+                android:textSize="?attr/fontSize_2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

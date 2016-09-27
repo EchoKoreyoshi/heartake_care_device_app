@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HeartakeCare</string>
+    <string name="menu_test">Item Detection</string>
+    <string name="menu_target">Detection object</string>
+    <string name="menu_author">Equipment Authorization</string>
+    <string name="menu_settings">Settings</string>
+    <string name="remain_count">Surplus%dTimes</string>
+    <!--selectActivity and dialog-->
+    <string name="select_title">Please select user type belongs:</string>
+    <string name="select_home">Home Users</string>
+    <string name="select_unit">Unit Users</string>
+    <string name="select_next">Next</string>
+    <string name="select_dialog_title">Important Hint</string>
+    <string name="select_dialog_message">Make sure the user type you selected again, will not be changed after OK.</string>
+    <string name="select_dialog_positivebutton">Reselect</string>
+    <string name="select_dialog_negativebutton">Confirm</string>
+    <!--MainActivity tabhost text-->
+    <string name="check_title">Micro fluorescence immunoassay analyzer</string>
+    <string name="record_title">Record</string>
+    <string name="tab_host_check">Testing</string>
+    <string name="tab_host_record">Record</string>
+    <!--checkedfragment_text-->
+    <string name="main_select_project">Please select the test project</string>
+    <string name="select_play">Start Detection</string>
+    <string name="checked_fragment_dialog_title">Tips</string>
+    <string name="checked_fragment_dialog_msg">Please select the test project。</string>
+    <string name="checked_fragment_dialog_positivebutton">Got it</string>
+    <!--window_select_project-->
+    <string name="window_select_project_title">Test items</string>
+    <string name="window_select_project_add">Add test items</string>
+    <!--window_settings-->
+    <string name="check_object">Detection object</string>
+    <string name="author">Equipment Authorization</string>
+    <string name="settings">Settings</string>
+
+    <!--CheckedProjectActivity  text-->
+    <string name="checked_project_title">Test items</string>
+    <string name="checked_project_dialog_title">Tips</string>
+    <string name="checked_project_dialog_msg">Please use the camera to scan the kit of the device came with a barcode or two-dimensional code.</string>
+    <string name="checked_project_dialog_positivebutton">Got it</string>
+    <!--ProjectinfoActivity_text-->
+    <string name="reagent_info">Reagent information</string>
+    <string name="reagent_info_project_name">Test items：</string>
+    <string name="reagent_count">Number of single reagent cartridge：</string>
+    <string name="reagent_production_number">Production batch：</string>
+    <string name="reagent_trem">Duration (months)：</string>
+    <string name="reagent_vender">Manufacturer：</string>
+    <!--ScanCodeActivity_text-->
+    <string name="scan_code_title">Scan QRcode/Barcode</string>
+    <!--CheckedObjectActivity_text-->
+    <string name="checked_object_title">Detection object</string>
+    <!--AddCheckedObjectInfoActivity_text-->
+    <string name="add_checked_object_info_title">Detecting the object information</string>
+    <string name="add_checked_object_name">Name：</string>
+    <string name="add_checked_object_age">Age：</string>
+    <string name="add_checked_object_sex">Sex：</string>
+    <string name="add_checked_object_weight">Weight：</string>
+    <string name="add_checked_object_history">History：</string>
+    <string name="save">Save</string>
+    <!--DevicesAuthorizeActivity_text-->
+    <string name="devices_authorize_title">Equipment Authorization</string>
+    <string name="id_d">ID:%d</string>
+    <string name="hint">Please use your phone to scan this QR code APP complete authorization</string>
+    <string name="devices_authorize_dialog_title">Equipment Authorization</string>
+    <string name="devices_authorize_dialog_msg">Do you agree if this device detects the data to account for the authorization XXXXXXXXXXX mobile end users to view App?</string>
+    <string name="devices_authorize_dialog_positivebutton">Refuse</string>
+    <string name="devices_authorize_dialog_negativebutton">Agree</string>
+    <!--AboutUsActivity_text-->
+    <string name="about_us_title">About us</string>
+    <string name="version_text">Version Number：</string>
+    <string name="version_number">1.0.0</string>
+    <string name="skill_support_text">Technical Support：ShenZhen Cloud Data CollectorTechnology Co.,LTD</string>
+    <string name="client_phone_number">Customer Phone：0755-21507199</string>
+    <string name="client_email">Customer Email：wh@jjc12320.cn</string>
+    <string name="copyright">天津XXX版权所有</string>
+    <!--ResultDetailsActivity_text-->
+    <string name="result_details_title">Results Details</string>
+    <string name="result_details_checked_object">Detection object:</string>
+    <string name="result_details_date">Date:</string>
+    <string name="result_details_reference">Reference:</string>
+    <string name="result_details_checked_result">Test results:</string>
+    <string name="result_details_disease">The corresponding condition:</string>
+    <string name="result_details_clinical">The clinical interpretation:</string>
+    <!--SettingsActivity_text-->
+    <string name="settings_title">Settings</string>
+    <string name="wlan_settings">WLAN Settings</string>
+    <string name="gsm_settings">GSM Data</string>
+    <string name="language_select">Language Selection</string>
+    <string name="font_size">Font Size</string>
+    <string name="check_update">Check for updates</string>
+    <string name="about_us">About us</string>
+    <string name="devices_id_text">Device ID:</string>
+    <!--WriteUnitNameActivity_text-->
+    <string name="tv_write_unit_name">Please fill in your organization name：</string>
+    <string name="et_write_unit_name">Please fill in your organization name</string>
+    <!--GSMDataActivity_text-->
+    <string name="gsm_data_open">ON</string>
+    <string name="gsm_data_off">OFF</string>
+    <string name="gsm_data_title">GSM Data</string>
+    <!--LanguageSelectAvtivity_text-->
+    <string name="language_select_title">Language Selection</string>
+    <string name="simplified_chinese">Simplified Chinese</string>
+    <string name="english">English</string>
+    <!--FontSizeActivity_text-->
+    <string name="font_size_activity_title">Font Size</string>
+    <string name="font_size_large">Large</string>
+    <string name="font_size_medium">Medium</string>
+    <string name="font_size_small">Small</string>
+    <!--WLANSettingsActivity_text-->
+    <string name="wlan_settings_activity_title">WLAN Settings</string>
+    <string name="wifi_edit_passwd">Password</string>
+    <!--CaptureActivity_text-->
+    <string name="scanner_code">Align QR Code/barcode within frame to scan</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary1">#F0F0F0</color>
+    
+    <color name="colorPrimary">#FF2BCE86</color>
+
+    <color name="colorPrimaryDark">#FF279165</color>
+
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="rb_green_bg">#FF2BCE86</color>
+
+    <color name="line_green">#FF39F8A3</color>
+
+    <color name="color_gray">#FFAAAAAA</color>
+
+    <color name="scrollbar_track_color">#66AAAAAA</color>
+
+    <!-- 二维码使用的颜色-->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#B0000000</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
+    <!-- 二维码使用的颜色 -->
+
+</resources>

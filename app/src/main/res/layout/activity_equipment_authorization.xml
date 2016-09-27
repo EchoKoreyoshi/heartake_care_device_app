@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="初始化设备授权(设备已授权的话请走下一步):"
+        android:textColor="@android:color/black"
+        android:textSize="?attr/fontSize_1"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/bt_step1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="第一步"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/bt_step2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="第二步"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/bt_step3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="第三步"/>
+
+    <LinearLayout
+        android:id="@+id/step_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_next"
+            android:textColor="@android:color/black"
+            android:textSize="?attr/fontSize_3"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+    </LinearLayout>
+</LinearLayout>

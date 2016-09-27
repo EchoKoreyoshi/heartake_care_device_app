@@ -1,0 +1,110 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'org.greenrobot.greendao'
+//添加如下代码，应用apt插件
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.cjyun.heartakecare"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        ndk {
+            moduleName "lenwotion_gpio" // <-- This is the name of my C++ module!
+            abiFilters "armeabi", "armeabi-v7a"
+        }
+    }
+
+
+    sourceSets.main {
+        jniLibs.srcDirs = ['jniLibs']  // <-- Set your folder here!
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        //Klog配置
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    // 注释冲突
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+}
+
+greendao {
+    schemaVersion 1
+    targetGenDir 'src/main/java'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:support-v4:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    //Rxjava
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    //dagger2
+    compile 'com.google.dagger:dagger:2.4'
+    apt 'com.google.dagger:dagger-compiler:2.4'
+    //java注解
+    compile 'org.glassfish:javax.annotation:10.0-b28'
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    //网络请求retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.0.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    //图片加载
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    //Log工具KLog
+    compile 'com.github.zhaokaiqiang.klog:library:1.5.0'
+    //Zxing
+    compile 'com.google.zxing:core:3.2.1'
+    //GreenDao
+    compile 'org.greenrobot:greendao:3.1.1'
+    /* JSON */
+    /*    compile 'com.google.code.gson:gson:2.5'
+                compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+                // >Retrofit & OkHttp
+                compile('com.squareup.retrofit2:retrofit:2.0.0-beta3') {
+                    // exclude Retrofit’s OkHttp peer-dependency module and define your own module import
+                    exclude module: 'okhttp'
+                }
+                compile 'com.squareup.okhttp3:okhttp:3.0.1'*/
+    //  compile files('libs/SerialCtrol.jar')
+    //   compile files('libs/PowerOperate.jar')
+}

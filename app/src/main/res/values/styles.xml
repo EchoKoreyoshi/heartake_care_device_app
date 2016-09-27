@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary1</item>
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <!--EditText下划线的颜色-->
+        <item name="colorAccent">@color/line_green</item>
+
+        <item name="toolbarStyle">@style/ClubToolbar</item>
+    </style>
+
+    <!--去掉toolbar左侧的空隙-->
+    <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <!--字体大小样式-->
+
+    <style name="Theme_Small">
+        <item name="fontSize_1">13dp</item>
+        <item name="fontSize_2">16dp</item>
+        <item name="fontSize_3">18dp</item>
+        <item name="fontSize_4">23dp</item>
+    </style>
+
+    <style name="Theme_Medium">
+        <item name="fontSize_1">15dp</item>
+        <item name="fontSize_2">18dp</item>
+        <item name="fontSize_3">20dp</item>
+        <item name="fontSize_4">25dp</item>
+    </style>
+
+    <style name="Theme_Large">
+        <item name="fontSize_1">17dp</item>
+        <item name="fontSize_2">20dp</item>
+        <item name="fontSize_3">22dp</item>
+        <item name="fontSize_4">27dp</item>
+    </style>
+
+</resources>

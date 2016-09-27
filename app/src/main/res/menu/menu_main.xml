@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".main.ui.MainActivity">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_test"
+            android:title="@string/menu_test"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/menu_target"
+            android:title="@string/menu_target"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/menu_author"
+            android:title="@string/menu_author"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/menu_settings"
+            android:title="@string/menu_settings"
+            app:showAsAction="never"/>
+    </group>
+</menu>

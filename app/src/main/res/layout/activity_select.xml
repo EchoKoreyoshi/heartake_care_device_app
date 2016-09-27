@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/select_title"
+        android:textColor="@android:color/black"
+        android:textSize="?attr/fontSize_1"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/select_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/bt_home"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/selector_green_bt"
+            android:button="@null"
+            android:checked="false"
+            android:drawableRight="@drawable/selector_next"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/select_home"
+            android:textColor="@drawable/selector_text_bt"
+            android:textSize="?attr/fontSize_4" />
+
+        <RadioButton
+            android:id="@+id/bt_unit"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/selector_green_bt"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_next"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/select_unit"
+            android:textColor="@drawable/selector_text_bt"
+            android:textSize="?attr/fontSize_4" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/select_next"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_next"
+            android:textColor="@android:color/black"
+            android:textSize="?attr/fontSize_3"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+    </LinearLayout>
+</LinearLayout>

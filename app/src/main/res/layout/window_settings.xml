@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gray_underline"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:background="@mipmap/close"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/check_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gray_underline"
+        android:padding="10dp"
+        android:text="@string/window_select_project_title"
+        android:textColor="@android:color/black"
+        android:textSize="?attr/fontSize_1"/>
+
+    <TextView
+        android:id="@+id/check_object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gray_underline"
+        android:padding="10dp"
+        android:text="@string/check_object"
+        android:textColor="@android:color/black"
+        android:textSize="?attr/fontSize_1"/>
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gray_underline"
+        android:padding="10dp"
+        android:text="@string/author"
+        android:textColor="@android:color/black"
+        android:textSize="?attr/fontSize_1"/>
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gray_underline"
+        android:padding="10dp"
+        android:text="@string/settings"
+        android:textColor="@android:color/black"
+        android:textSize="?attr/fontSize_1"/>
+</LinearLayout>
